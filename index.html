@@ -2,35 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Todo app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-  Todo
+  <div class="container__background"></div>
 
-  <!-- Add dynamic number --> items left
+  <div class="container">
+    <header class="header">
+      <h1 class="title">TODO</h1>
+      <button class="header__toggle header__toggle-night" aria-label="Switch to night theme"></button>
+    </header>
 
-  All
-  Active 
-  Completed
+    <div class="todo__new">
+      <div class="todo__check">
+        <div class="todo__check-mark"></div>
+      </div>
+      <div class="todo__new-item">
+        <form onsubmit="addItem(event)">
+          <input id="todo-input" type="text" placeholder="Create a new todo..." />
+        </form>
+      </div>
+    </div>
 
-  Clear Completed
+    <main class="todo__items">
+      <div class="todo__items-wrapper">
+        <div class="todo__item todo__item-checked">
+          <div class="todo__check">
+            <div class="todo__check-mark"></div>
+          </div>
+          <div class="todo__text">
+            Lorem ipsum dolor sit amet consectetur
+          </div>
+        </div>
+        <div class="todo__item">
+          <div class="todo__check">
+            <div class="todo__check-mark"></div>
+          </div>
+          <div class="todo__text">
+            Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur
+          </div>
+        </div>
+        <div class="todo__item todo__item-checked">
+          <div class="todo__check">
+            <div class="todo__check-mark"></div>
+          </div>
+          <div class="todo__text">
+            Lorem ipsum dolor sit amet consectetur
+          </div>
+        </div>
+        <div class="todo__item">
+          <div class="todo__check">
+            <div class="todo__check-mark"></div>
+          </div>
+          <div class="todo__text">
+            Lorem ipsum dolor sit amet consectetur
+          </div>
+        </div>
+        <div class="todo__item">
+          <div class="todo__check">
+            <div class="todo__check-mark"></div>
+          </div>
+          <div class="todo__text">
+            Lorem ipsum dolor sit amet consectetur
+          </div>
+        </div>
+        <div class="todo__item">
+          <div class="todo__check">
+            <div class="todo__check-mark"></div>
+          </div>
+          <div class="todo__text">
+            Lorem ipsum dolor sit amet consectetur
+          </div>
+        </div>
+        <div class="todo__item">
+          <div class="todo__check">
+            <div class="todo__check-mark"></div>
+          </div>
+          <div class="todo__text">
+            Lorem ipsum dolor sit amet consectetur
+          </div>
+        </div>
+      </div>
 
-  Drag and drop to reorder list
+      <div class="items__filter">
+        <div class="items__count">
+            5 items left
+        </div>
+        <div class="items__filter-status">
+            <span class="filter-status__active ">All</span>
+            <span>Active</span>
+            <span>Completed</span>
+        </div>
+        <div class="items__info-clear">
+            <span>Clear Completed</span>
+        </div>
+      </div>
+    </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <footer class="footer">
+      <p class="footer__text">
+        Drag and drop to reorder list
+      </p>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW" target="_blank">Frontend Mentor</a><br>
+        Coded by @<a href="http://github.com/ya-boris">ya_boris</a>
+      </div>
+    </footer>
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
