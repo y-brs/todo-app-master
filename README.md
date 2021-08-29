@@ -31,3 +31,7 @@ Yooooo! 🚀
 - localStorage
 
 ### Screenshot
+
+![Screenshot 2021-08-29 at 23 52 41](https://user-images.githubusercontent.com/68222437/131265040-6cec3ad9-8ba4-48e1-aae5-fd22b52064fd.png)
+![Screenshot 2021-08-29 at 23 52 44](https://user-images.githubusercontent.com/68222437/131265043-5f3b0451-9a4e-4cc3-b630-8be1e8b3f629.png)
+
