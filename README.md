@@ -18,7 +18,7 @@ Users should be able to:
 - ✅ Toggle light and dark mode
 - ✅ **Bonus**: Drag and drop to reorder items on the list
 
-#### Deployed live on **LINK** . Check out!
+#### Deployed live on **https://todo-app-72e5ea.netlify.app** . Check out!
 
 Yooooo! 🚀
 
