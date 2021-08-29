@@ -33,12 +33,20 @@ const todoInputForm = document.querySelector(".todo__new-form"),
 
 const fromLocalStorage = JSON.parse(localStorage.getItem("todoData"));
 
-let data = fromLocalStorage || [];
+let data = fromLocalStorage || [
+  {id: 1630268429458, desc: "Complete online JavaScript course", isCompleted: "true"},
+  {id: 1630269177954, desc: "Jog around the park 3x", isCompleted: "false"},
+  {id: 1630269178298, desc: "10 minutes meditation", isCompleted: "false"},
+  {id: 1630269178136, desc: "Read for 1 hour", isCompleted: "false"},
+  {id: 1630269177761, desc: "Pick up groceries", isCompleted: "false"},
+  {id: 1630269178487, desc: "Complete Todo App on Frontend Mentor", isCompleted: "true"},
+]; // !! First value
+
 let dragSrcEl;
 
 
 function showTodoCount() {
-  const todoCount = localStorage.getItem("todoCountNumber");
+  const todoCount = localStorage.getItem("todoCountNumber") || "4"; // !! First value
 
   if (todoCount <= 1) {
     todoCountNumber.textContent = `${todoCount} item`;
