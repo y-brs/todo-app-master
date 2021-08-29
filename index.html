@@ -19,94 +19,33 @@
     </header>
 
     <div class="todo__new">
-      <div class="todo__check">
-        <div class="todo__check-mark"></div>
-      </div>
+      <input
+        type="checkbox"
+        name="complete"
+        class="todo__item-checkbox"
+      />
       <div class="todo__new-item">
-        <form onsubmit="addItem(event)">
-          <input id="todo-input" type="text" placeholder="Create a new todo..." />
+        <form class="todo__new-form">
+          <input class="todo__new-input" type="text" placeholder="Create a new todo..." />
         </form>
       </div>
     </div>
 
     <main class="todo__items">
       <div class="todo__items-wrapper">
-        <div class="todo__item todo__item-checked">
-          <div class="todo__check">
-            <div class="todo__check-mark"></div>
-          </div>
-          <div class="todo__text">
-            Go to grocery store and buy vegetables
-          </div>
-          <button class="todo__item-delete"></button>
-        </div>
-        <div class="todo__item">
-          <div class="todo__check">
-            <div class="todo__check-mark"></div>
-          </div>
-          <div class="todo__text">
-            Buy Tesla 3
-          </div>
-          <button class="todo__item-delete"></button>
-        </div>
-        <div class="todo__item todo__item-checked">
-          <div class="todo__check">
-            <div class="todo__check-mark"></div>
-          </div>
-          <div class="todo__text">
-            Complete Todo App on Frontend Mentor
-          </div>
-          <button class="todo__item-delete"></button>
-        </div>
-        <div class="todo__item">
-          <div class="todo__check">
-            <div class="todo__check-mark"></div>
-          </div>
-          <div class="todo__text">
-            Watch
-          </div>
-          <button class="todo__item-delete"></button>
-        </div>
-        <div class="todo__item">
-          <div class="todo__check">
-            <div class="todo__check-mark"></div>
-          </div>
-          <div class="todo__text">
-            5 minutes meditation
-          </div>
-          <button class="todo__item-delete"></button>
-        </div>
-        <div class="todo__item">
-          <div class="todo__check">
-            <div class="todo__check-mark"></div>
-          </div>
-          <div class="todo__text">
-            Read 2 hour
-          </div>
-          <button class="todo__item-delete"></button>
-        </div>
-        <div class="todo__item">
-          <div class="todo__check">
-            <div class="todo__check-mark"></div>
-          </div>
-          <div class="todo__text">
-            Listen new album Nico Sauve
-          </div>
-          <button class="todo__item-delete"></button>
-        </div>
       </div>
 
       <div class="items__filter">
         <div class="items__count">
-          5 items left
+          <span class="items__count-number">0</span> left
         </div>
         <div class="items__filter-status">
-          <button class="filter-button filter-button__active">All</button>
-          <button class="filter-button">Active</button>
-          <button class="filter-button">Completed</button>
+          <button class="filter-button button-all filter-button__active">All</button>
+          <button class="filter-button button-active">Active</button>
+          <button class="filter-button button-completed">Completed</button>
         </div>
         <div class="items__info-clear">
-          <button class="filter-button">Clear Completed</button>
+          <button class="filter-button button-clear">Clear Completed</button>
         </div>
       </div>
     </main>
