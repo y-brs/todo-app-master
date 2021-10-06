@@ -1,5 +1,4 @@
 // dark mode switcher
-
 const themeButton = document.querySelector(".header__toggle")
 const themeCurrent = localStorage.getItem("theme")
 
@@ -19,7 +18,6 @@ themeButton.addEventListener("click", function () {
 })
 
 // to-do app
-
 const todoInputForm = document.querySelector(".todo__new-form"),
       todoInput = document.querySelector(".todo__new-input"),
       taskRemoveBtn = document.querySelector(".todo__item-delete"),
@@ -148,10 +146,7 @@ function dropHandler(e) {
     });
 
     // Swapping todo in data array
-    [data[srcTargetIndices[0]], data[srcTargetIndices[1]]] = [
-      data[srcTargetIndices[1]],
-      data[srcTargetIndices[0]],
-    ];
+    [data[srcTargetIndices[0]], data[srcTargetIndices[1]]] = [data[srcTargetIndices[1]], data[srcTargetIndices[0]],];
 
     dragSrcEl.innerHTML = targetItem.innerHTML;
     targetItem.innerHTML = e.dataTransfer.getData("text/html");
@@ -164,6 +159,7 @@ function dropHandler(e) {
       targetItem.setAttribute(attr.name, attr.value)
     );
   }
+
   targetItem.style.background = "";
   sourceItem.style.background = "";
 
