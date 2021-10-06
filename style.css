@@ -179,7 +179,6 @@ a {
 }
 
 .todo__item-delete {
-
   width: 18px;
   height: 18px;
   border: none;
@@ -193,7 +192,6 @@ a {
 .todo__item:hover .todo__item-delete {
   visibility: visible;
   opacity: 1;
-
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23494C6B' fill-rule='evenodd' d='M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z'/%3E%3C/svg%3E");
 }
 
@@ -203,7 +201,7 @@ a {
 
 .todo__item-checkbox {
   position: relative;
-  margin: 10px 50px 0 0;
+  margin: 10px 40px 0 0;
   display: flex;
   appearance: none;
 }
@@ -221,7 +219,7 @@ a {
   border-radius: 50%;
   border: none;
   position: absolute;
-  top: -10px;
+  top: -9px;
   left: -3px;
   z-index: 10;
   transition: background 0s;
@@ -235,7 +233,7 @@ a {
   height: 25px;
   border-radius: 50%;
   position: absolute;
-  top: -11px;
+  top: -10px;
   left: -4px;
   z-index: 5;
 }
@@ -253,7 +251,7 @@ a {
 .todo__item .todo__item-checkbox:checked::after {
   width: 25px;
   height: 25px;
-  top: -11px;
+  top: -10px;
   left: -4px;
 }
 
@@ -310,6 +308,10 @@ a {
 }
 
 @media (max-width: 700px) {
+  .todo__item-checkbox {
+    margin-right: 30px;
+  }
+
   .container__background {
     background-image: var(--background-mobile-image);
   }
