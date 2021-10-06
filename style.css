@@ -201,7 +201,7 @@ a {
 
 .todo__item-checkbox {
   position: relative;
-  margin: 10px 40px 0 0;
+  margin: 5px 40px 0 0;
   display: flex;
   appearance: none;
 }
@@ -219,7 +219,7 @@ a {
   border-radius: 50%;
   border: none;
   position: absolute;
-  top: -9px;
+  top: -7px;
   left: -3px;
   z-index: 10;
   transition: background 0s;
@@ -233,7 +233,7 @@ a {
   height: 25px;
   border-radius: 50%;
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: -4px;
   z-index: 5;
 }
@@ -251,7 +251,7 @@ a {
 .todo__item .todo__item-checkbox:checked::after {
   width: 25px;
   height: 25px;
-  top: -10px;
+  top: -8px;
   left: -4px;
 }
 
