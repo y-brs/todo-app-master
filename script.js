@@ -1,17 +1,17 @@
 // dark mode switcher
-const themeButton = document.querySelector(".header__toggle")
-const themeCurrent = localStorage.getItem("theme")
+const themeButton = document.querySelector(".header__toggle");
+const themeCurrent = localStorage.getItem("theme");
 
 if (themeCurrent == "dark") {
-  document.body.classList.add("dark")
+  document.body.classList.add("dark");
 }
 
 themeButton.addEventListener("click", function () {
-  document.body.classList.toggle("dark")
-  let theme = ""
+  document.body.classList.toggle("dark");
+  let theme = "";
 
   if (document.body.classList.contains("dark")) {
-    theme = "dark"
+    theme = "dark";
   }
 
   localStorage.setItem("theme", theme);
@@ -41,7 +41,6 @@ let data = fromLocalStorage || [
 ]; // !! First value
 
 let dragSrcEl;
-
 
 function showTodoCount() {
   const todoCount = localStorage.getItem("todoCountNumber") || "4"; // !! First value
